@@ -18,6 +18,8 @@ export class NewsletterFormComponent {
     this.newsletterForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      telefone: ['', Validators.required],  
+      message: ['', Validators.required]
     });
   }
 

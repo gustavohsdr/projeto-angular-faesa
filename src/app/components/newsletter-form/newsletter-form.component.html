@@ -1,35 +1,51 @@
 <section class="form-section">
-    <div class="text">
-      <h3>Faça sua pré-inscrição</h3>
-      <p>
-        lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-        Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
-        ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam
-        quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
-        interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
-        sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis
-        orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros,
-        eget temp
-      </p>
-    </div>
-    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()">
-      <label for="name">Name</label>
-      <input
-        id="name"
-        formControlName="name"
-        (focus)="onFocus($event)"
-        (blur)="onBlur($event)"
-      />
-      <label for="email">Email</label>
-      <input
-        id="email"
-        formControlName="email"
-        (focus)="onFocus($event)"
-        (blur)="onBlur($event)"
-      />
-      <button type="submit">
-        {{ loading ? 'carregamento...' : 'Se inscreva' }}
-      </button>
-    </form>
-  </section>
-  
+  <div class="text">
+    <h3>Faça sua pré-inscrição</h3>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
+      Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis
+      ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam
+      quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna
+      interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum
+      sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis
+      orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros,
+      eget temp Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, soluta. Natus rem adipisci cumque laboriosam illum alias odio quod nisi harum neque. Ab porro dolorem perspiciatis ut, necessitatibus quibusdam fuga!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eos quam quas sequi beatae reiciendis nulla ea? Animi, necessitatibus quaerat? Tempore officia maxime accusamus aliquam debitis, itaque esse ipsum cum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolor libero, tenetur velit quis, fugiat earum alias tempora magni, sapiente temporibus magnam ullam at corrupti aperiam aut id provident nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga distinctio esse laudantium commodi modi itaque, tenetur placeat ut, natus facilis illum nam, veritatis sed ex fugiat expedita laboriosam vel saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga sapiente excepturi consequuntur quibusdam nisi possimus maiores, impedit, officiis tempore eligendi sunt debitis voluptatem! Praesentium perferendis sequi vel quaerat? Aliquam.
+    </p>
+  </div>
+  <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()">
+    <label for="name">Nome</label>
+    <input
+      id="name"
+      formControlName="name"
+      (focus)="onFocus($event)"
+      (blur)="onBlur($event)"
+    />
+    <label for="email">Email</label>
+    <input
+      id="email"
+      formControlName="email"
+      (focus)="onFocus($event)"
+      (blur)="onBlur($event)"
+    />
+    <label for="telefone">Telefone</label>
+    <input 
+      id="telefone"
+      formControlName="telefone"
+      (focus)="onFocus($event)"
+      (blur)="onBlur($event)"
+    />
+
+    <label for="message">Mensagem</label>
+    <input 
+    id="message"
+    formControlName="message"
+    (focus)="onFocus($event)"
+    (blur)="onBlur($event)"
+    />
+
+    <button type="submit">
+      {{ loading ? 'carregamento...' : 'Se inscreva' }}
+    </button>
+  </form>
+</section>
