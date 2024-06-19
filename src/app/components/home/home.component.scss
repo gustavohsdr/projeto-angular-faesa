@@ -5,6 +5,8 @@ main {
     flex-direction: column;
     gap: 40px;
     margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .main-section {
@@ -14,6 +16,7 @@ main {
     flex-direction: column;
     gap: 20px;
     font-family: "Roboto", sans-serif;
+    
 
     span {
         font-size: 16px;
@@ -21,11 +24,7 @@ main {
         color: $secondary-text;
     }
     
-    h1 {
-        font-size: 36px;
-        font-weight: 900;
-        color: $primary-text;
-    }
+
 
     img {
         max-width: 100%;
@@ -38,19 +37,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -100px;
 
     gap: 40px;
 
     .benefit-data {
         border-bottom: 10px solid $secondary-color;
         padding-bottom: 20px;
-
-        h2 {
-            font-size: 48px;
-            font-weight: 600;
-            font-family: "Roboto", sans-serif;
-            color: $primary-text;
-        }
     }
 
     p {
@@ -103,6 +96,7 @@ main {
     }
 
     .benefit-section {
+        margin-top: 50px;
         flex-direction: row;
         .benefit-data h2 {
             font-size: 60px;
